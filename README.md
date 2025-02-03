@@ -1,6 +1,6 @@
 # SecureMessagingSystem-Group3-COMP485
 
-3.Secure Messaging System
+
 This project is a chat system that provides simple message encryption. The
 system consists of two components, the client and the server. The server is the
 core of the system because all connections and messages are passed through
