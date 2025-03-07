@@ -11,3 +11,9 @@ time.
 1. Carbajal, Diego A
 2. Castellanos, Milton E
 3. Estrada, Christian
+
+
+Tech
+- Frontend: HTML/CSS/JS
+- Backend: Python/Flask
+- Database: tbt
