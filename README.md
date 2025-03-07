@@ -13,7 +13,7 @@ time.
 3. Estrada, Christian
 
 
-Tech
+## TechStack
 - Frontend: HTML/CSS/JS
 - Backend: Python/Flask
 - Database: tbt
