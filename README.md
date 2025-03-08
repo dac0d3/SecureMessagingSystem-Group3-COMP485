@@ -17,3 +17,10 @@ time.
 - Frontend: HTML/CSS/JS
 - Backend: Python/Flask
 - Database: tbt
+
+## Requirements
+- Create account
+- Friends/ Friend Request
+- Private Messaging
+- Group Messaging
+- Online/ Offline Status 
