@@ -1,12 +1,17 @@
+import os
+import pymysql  # Add this line to ensure PyMySQL is imported
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+
+pymysql.install_as_MySQLdb()  # Ensures PyMySQL works with SQLAlchemy
 
 app = Flask(__name__)
 
 
-# Database Configuration
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:yourpassword@localhost/myflaskdb'
+# Load credentials from environment variables
+app.config['SQLALCHEMY_DATABASE_URI'] = f"mysql+pymysql://{os.getenv('MYSQL_USER')}:{os.getenv('MYSQL_PASSWORD')}@{os.getenv('MYSQL_HOST')}/{os.getenv('MYSQL_DB')}"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
 db = SQLAlchemy(app)
 
 
